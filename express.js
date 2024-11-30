@@ -9,7 +9,7 @@ const port = 3001;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use('/images', express.static('/images')); 
+app.use('images', express.static('images')); 
 app.use(express.static(path.join(__dirname, 'images'))); 
 
 // Add a route to serve the index.html file
@@ -30,70 +30,70 @@ const initialLessons = [
         "location": "Hendon",
         "price": 100,
         "spaces": 5,
-        "image": "/images/math.png"
+        "image": "images/math.png"
     },
     {
         "subject": "English",
         "location": "Colindale",
         "price": 90,
         "spaces": 5,
-        "image": "/images/english.png"
+        "image": "images/english.png"
     },
     {
         "subject": "Science",
         "location": "Brent Cross",
         "price": 110,
         "spaces": 5,
-        "image": "/images/science.png"
+        "image": "images/science.png"
     },
     {
         "subject": "Art",
         "location": "Golders Green",
         "price": 85,
         "spaces": 5,
-        "image": "/images/art.png"
+        "image": "images/art.png"
     },
     {
         "subject": "Music",
         "location": "Hendon",
         "price": 95,
         "spaces": 5,
-        "image": "/images/music.png"
+        "image": "images/music.png"
     },
     {
         "subject": "Physical Education",
         "location": "Colindale",
         "price": 80,
         "spaces": 5,
-        "image": "/images/pe.png"
+        "image": "images/pe.png"
     },
     {
         "subject": "Computer Science",
         "location": "Brent Cross",
         "price": 120,
         "spaces": 5,
-        "image": "/images/cs.png"
+        "image": "images/cs.png"
     },
     {
         "subject": "History",
         "location": "Golders Green",
         "price": 88,
         "spaces": 5,
-        "image": "/images/history.png"
+        "image": "images/history.png"
     },
     {
         "subject": "Geography",
         "location": "Hendon",
         "price": 92,
         "spaces": 5,
-        "image": "/images/geography.png"
+        "image": "images/geography.png"
     },
     {
         "subject": "Drama",
         "location": "Colindale",
         "price": 87,
         "spaces": 5,
-        "image": "/images/drama.png"
+        "image": "images/drama.png"
     }
 ];
 
