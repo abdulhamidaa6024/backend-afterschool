@@ -10,7 +10,7 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 app.use('/images', express.static('/images')); 
-app.use(express.static(path.join(__dirname, 'images))); 
+app.use(express.static(path.join(__dirname, 'images'))); 
 
 // Add a route to serve the index.html file
 app.get('/', (req, res) => {
