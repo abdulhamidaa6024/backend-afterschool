@@ -9,12 +9,12 @@ const port = 3001;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use('/images', express.static('public/images')); 
-app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from 'public' directory
+app.use('/images', express.static('/images')); 
+app.use(express.static(path.join(__dirname, 'images))); 
 
 // Add a route to serve the index.html file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Rest of your existing code remains the same (MongoDB connection, routes, etc.)
