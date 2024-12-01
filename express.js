@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('images', express.static('images')); 
 app.use(express.static(path.join(__dirname, 'images'))); 
 
-// Add a route to serve the index.html file
+// Add a route to serve the index.html 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -20,9 +20,6 @@ app.get('/', (req, res) => {
 // Rest of your existing code remains the same (MongoDB connection, routes, etc.)
 const uri = process.env.MONGODB_URI || "mongodb+srv://naibiabdulhamid:naibi@cluster0.l9uodaf.mongodb.net/afterschool?retryWrites=true&w=majority";
 let db;
-
-// ... (rest of the original code)
-
 // Lesson data for reset
 const initialLessons = [
     {
