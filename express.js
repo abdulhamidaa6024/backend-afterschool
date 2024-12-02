@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Rest of your existing code remains the same (MongoDB connection, routes, etc.)
 const uri = process.env.MONGODB_URI || "mongodb+srv://naibiabdulhamid:naibi@cluster0.l9uodaf.mongodb.net/afterschool?retryWrites=true&w=majority";
 let db;
 // Lesson data for reset
