@@ -9,8 +9,5 @@
 ### Hosted Back-End Server
 - [Back-End Server Hosted on Render](https://backend-afterschool.onrender.com)
 
-### Database Exports
-- [Lessons Collection (.json)](.\afterschool.lessons.json)
-- [Orders Collection (.json)](./database_exports/orders.json)
 
 
